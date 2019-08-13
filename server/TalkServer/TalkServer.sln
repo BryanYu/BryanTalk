@@ -1,14 +1,24 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio Version 16
-VisualStudioVersion = 16.0.29201.188
+# Visual Studio 15
+VisualStudioVersion = 15.0.28307.489
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TalkServer", "TalkServer\TalkServer.csproj", "{33660BCE-5664-42B7-8305-EF9D25BCB851}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TalkServer", "TalkServer\TalkServer.csproj", "{33660BCE-5664-42B7-8305-EF9D25BCB851}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Docker", "Docker", "{A3980384-5EED-4B38-A8D2-0F56C4CF151D}"
 	ProjectSection(SolutionItems) = preProject
 		docker-compose.yml = docker-compose.yml
 	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Services", "Services", "{785736BC-487C-4C20-9397-5AFA2C7F6AEA}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Common", "Common", "{2E87CA7D-AC6B-4E1D-BA1F-4AEA9CAD681F}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Talk.Models", "Talk.Model\Talk.Models.csproj", "{8E0CA6B5-1268-4EEA-AC1B-D5AA76CCCC4F}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Talk.Service", "Talk.Service\Talk.Service.csproj", "{253A6134-E889-41E0-91AC-F2324CB35772}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Talk.Tools", "Talk.Tools\Talk.Tools.csproj", "{E332D3D6-A5D5-4AC3-9E18-DC91DEBB32DB}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -20,9 +30,26 @@ Global
 		{33660BCE-5664-42B7-8305-EF9D25BCB851}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{33660BCE-5664-42B7-8305-EF9D25BCB851}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{33660BCE-5664-42B7-8305-EF9D25BCB851}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8E0CA6B5-1268-4EEA-AC1B-D5AA76CCCC4F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8E0CA6B5-1268-4EEA-AC1B-D5AA76CCCC4F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8E0CA6B5-1268-4EEA-AC1B-D5AA76CCCC4F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8E0CA6B5-1268-4EEA-AC1B-D5AA76CCCC4F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{253A6134-E889-41E0-91AC-F2324CB35772}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{253A6134-E889-41E0-91AC-F2324CB35772}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{253A6134-E889-41E0-91AC-F2324CB35772}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{253A6134-E889-41E0-91AC-F2324CB35772}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E332D3D6-A5D5-4AC3-9E18-DC91DEBB32DB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E332D3D6-A5D5-4AC3-9E18-DC91DEBB32DB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E332D3D6-A5D5-4AC3-9E18-DC91DEBB32DB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E332D3D6-A5D5-4AC3-9E18-DC91DEBB32DB}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{8E0CA6B5-1268-4EEA-AC1B-D5AA76CCCC4F} = {2E87CA7D-AC6B-4E1D-BA1F-4AEA9CAD681F}
+		{253A6134-E889-41E0-91AC-F2324CB35772} = {785736BC-487C-4C20-9397-5AFA2C7F6AEA}
+		{E332D3D6-A5D5-4AC3-9E18-DC91DEBB32DB} = {2E87CA7D-AC6B-4E1D-BA1F-4AEA9CAD681F}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {2924479F-EA3F-4F99-AFAF-758F068EF9DB}

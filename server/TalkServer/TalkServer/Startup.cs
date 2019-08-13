@@ -13,6 +13,8 @@ using Microsoft.Extensions.Logging;
 using CacheManager.Core;
 using Microsoft.AspNetCore.Authentication.JwtBearer;
 using Microsoft.IdentityModel.Tokens;
+using Talk.Service.Implements;
+using Talk.Service.Interfaces;
 using TalkServer.Hubs;
 
 namespace TalkServer
@@ -51,6 +53,8 @@ namespace TalkServer
             });
 
 
+
+            services.AddScoped<IAccountService, AccountService>();
 
             services.AddMvc().SetCompatibilityVersion(CompatibilityVersion.Version_2_2);
 
