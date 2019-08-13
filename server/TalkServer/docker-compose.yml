@@ -1,8 +1,0 @@
-version: '3'
-services:
-    talkRedis:
-        image: redis
-        command: redis-server --appendonly yes
-        ports: 
-            - 6379:6379
-        
