@@ -1,0 +1,1 @@
+dotnet ef dbcontext scaffold --project ..\Talk.DataAccess.csproj --force "Server=192.168.99.100,1433;Database=Talk;User=sa;Password=!@D58526;" Microsoft.EntityFrameworkCore.SqlServer -o Models --context-dir DbContext

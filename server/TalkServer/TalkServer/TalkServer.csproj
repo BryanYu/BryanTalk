@@ -18,6 +18,7 @@
 
 
   <ItemGroup>
+    <ProjectReference Include="..\Talk.DataAccess\Talk.DataAccess.csproj" />
     <ProjectReference Include="..\Talk.Model\Talk.Models.csproj" />
     <ProjectReference Include="..\Talk.Service\Talk.Service.csproj" />
     <ProjectReference Include="..\Talk.Tools\Talk.Tools.csproj" />
