@@ -54,7 +54,7 @@ namespace TalkServer
 
 
 
-            services.AddScoped<IAccountService, AccountService>();
+            services.AddScoped<IUserService, UserService>();
 
             services.AddMvc().SetCompatibilityVersion(CompatibilityVersion.Version_2_2);
 

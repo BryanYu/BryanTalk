@@ -3,7 +3,7 @@ using Talk.DataAccess.Interfaces;
 
 namespace Talk.DataAccess
 {
-    public class AccountDataAccess : IAccountDataAccess
+    public class UserDataAccess : IUserDataAccess
     {
         public bool Verify(string account, string password)
         {

@@ -1,6 +1,6 @@
 ﻿namespace Talk.DataAccess.Interfaces
 {
-    public interface IAccountDataAccess
+    public interface IUserDataAccess
     {
         bool Verify(string account, string password);
     }

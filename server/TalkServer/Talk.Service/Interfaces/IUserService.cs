@@ -5,7 +5,7 @@ using Talk.Models.Account;
 
 namespace Talk.Service.Interfaces
 {
-    public interface IAccountService
+    public interface IUserService
     {
         /// <summary>
         /// 帳號密碼驗證

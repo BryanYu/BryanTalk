@@ -6,9 +6,9 @@ using Talk.Service.Interfaces;
 
 namespace Talk.Service.Implements
 {
-    public class AccountService : IAccountService
+    public class UserService : IUserService
     {
-        public AccountService()
+        public UserService()
         {
             
 

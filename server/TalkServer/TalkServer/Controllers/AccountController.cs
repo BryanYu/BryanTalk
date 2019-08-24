@@ -19,13 +19,13 @@ namespace TalkServer.Controllers
     [Authorize]
     public class AccountController : Controller
     {
-        private readonly IAccountService _accountService;
+        private readonly IUserService _userService;
 
         private readonly IConfiguration _config;
 
-        public AccountController(IAccountService accountService, IConfiguration config)
+        public AccountController(IUserService userService, IConfiguration config)
         {
-            _accountService = accountService;
+            _userService = userService;
             _config = config;
         }
 
@@ -33,7 +33,7 @@ namespace TalkServer.Controllers
         [AllowAnonymous]
         public IActionResult Login([FromBody] LoginModel login)
         {
-            if (!this._accountService.Verify(login.Account, login.Password))
+            if (!this._userService.Verify(login.Account, login.Password))
             {
                 return Unauthorized();
             }
@@ -56,7 +56,7 @@ namespace TalkServer.Controllers
         [HttpPost]
         public IActionResult Register([FromBody] RegisterModel register)
         {
-            this._accountService.Register(register);
+            this._userService.Register(register);
             return Ok();
         }
     }
