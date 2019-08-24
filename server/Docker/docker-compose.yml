@@ -1,11 +1,11 @@
 version: '3.4'
 
 services:
-  talkserver:
-    image: ${DOCKER_REGISTRY-}talkserver
-    build:
-      context: .
-      dockerfile: TalkServer/Dockerfile
+  # talkserver:
+  #   image: ${DOCKER_REGISTRY-}talkserver
+  #   build:
+  #     context: .
+  #     dockerfile: TalkServer/Dockerfile
 
     talkRedis:
         image: redis
@@ -14,6 +14,6 @@ services:
             - 6379:6379
 
     talkSQL: 
-        image: d58526/talkSQL
+        image: d58526/talksql:v3
         ports:
             - 1433:1433
